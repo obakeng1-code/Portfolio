@@ -6,7 +6,23 @@ This repository features a high-precision machine learning pipeline designed to 
 > **[🚀 Access the Interactive Fraud Simulator](https://gwtjbg8dxkfck8ee62v7mr.streamlit.app/)** > 
 
 ---
+## 📋 Problem Statement & Dataset
 
+### **Background**
+Credit card fraud represents a significant threat to both individual consumers and financial organizations. Beyond the immediate financial losses, fraudulent transactions can severely damage a bank's reputation and erode client trust. As online transactions have surged over the past decade, the necessity for real-time identification and prevention of financial fraud has become critical.
+
+### **The Challenge**
+The primary goal of this project is to implement the end-to-end data science process to build a robust fraud detection system. This involves:
+* **Identifying Anomalies**: Distinguishing legitimate behavior from fraudulent patterns.
+* **Model Optimization**: Comparing various classification algorithms to maximize detection accuracy while minimizing false positives.
+* **Real-time Processing**: Providing an interface for instant risk assessment.
+
+### **Dataset Description**
+The model is trained on a dataset containing credit card transactions made by European cardholders in September 2013.
+* **Scale**: 284,807 total transactions recorded over a two-day period.
+* **Privacy**: Most features are the result of a PCA transformation to preserve anonymity.
+* **Raw Features**: Only 'Time', 'Amount', and 'Class' remain in their original form.
+* **Class Imbalance**: The dataset is highly imbalanced, with fraud cases (Class 1) accounting for only a tiny fraction of the total data, requiring advanced sampling techniques like SMOTE.
 ## 🚀 Executive Summary
 * **Goal:** To capture 90% of fraud while remaining "invisible" to 99.97% of legitimate customers.
 * **The Imbalance Challenge:** Initial data was 99.83% legitimate. To solve this, I utilized **SMOTE** (Synthetic Minority Over-sampling Technique) to balance the training set from 339 fraud cases to 198,269 synthetic samples.
@@ -52,4 +68,5 @@ The system transitions from binary decisions to a **Dynamic Risk Score (0-100)**
    ```bash
    git clone [https://github.com/obakeng1-code/Portfolio.git](https://github.com/obakeng1-code/Portfolio.git)
    cd Portfolio
+
 
